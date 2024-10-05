@@ -1,0 +1,48 @@
+.shoppe-icon{
+    width: 30px;
+    height: 30px;
+}
+.header{
+    background-color: orange;
+    position: relative;
+    border-radius: 1rem;
+    top:0;
+}
+.header-left{
+    color: white;
+    margin-left: 2px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.header-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #f24e35;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-button {
+    padding: 10px;
+    background-color: #f24e35;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.search-button:hover {
+    background-color: #e04030;
+}
