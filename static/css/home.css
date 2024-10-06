@@ -1,6 +1,14 @@
 .shoppe-icon{
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+.shoppe-word{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 .header{
     background-color: orange;
@@ -8,50 +16,63 @@
     border-radius: 1rem;
     top:0;
 }
-.header-left{
+.icon-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+.header-left-item{
     color: white;
     margin-left: 2px;
     padding: 5px;
     text-decoration: none;
     font-size: 20px;
 }
-.hearder-container{
+.header-container{
     display: flex;
+    justify-content: space-between;
 }
-
 .header-right{
     display: flex;
     justify-content: flex-end;
     align-content: flex-start;
+    top: 0;
 }
+
+.header-right-item{
+    margin-left: 2px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
 
 
 .search-container {
     display: flex;
     align-items: center;
 }
-.shoppe-icon{
-    width: 100px;
-    height: 100px;
-}
 
 .search-input {
     width: 300px;
-    padding: 10px;
+    padding: 15px;
     border: 2px solid #f24e35;
     border-radius: 5px 0 0 5px;
     outline: none;
 }
 
 .search-button {
-    padding: 10px;
+    padding: 15px;
     background-color: #f24e35;
     border: none;
     color: white;
     cursor: pointer;
     border-radius: 0 5px 5px 0;
 }
-
 .search-button:hover {
     background-color: #e04030;
 }
