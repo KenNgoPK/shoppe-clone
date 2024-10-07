@@ -18,12 +18,6 @@
 }
 .icon-content{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    background-color: orange;
 }
 .header-left-item{
     color: white;
@@ -42,7 +36,6 @@
     align-content: flex-start;
     top: 0;
 }
-
 .header-right-item{
     margin-left: 2px;
     padding: 5px;
@@ -54,25 +47,68 @@
 
 .search-container {
     display: flex;
+    margin-left: 30rem;
     align-items: center;
 }
 
 .search-input {
     width: 300px;
-    padding: 15px;
+    padding: 20px;
     border: 2px solid #f24e35;
     border-radius: 5px 0 0 5px;
     outline: none;
 }
 
 .search-button {
-    padding: 15px;
+    padding: 20px;
     background-color: #f24e35;
     border: none;
     color: white;
     cursor: pointer;
     border-radius: 0 5px 5px 0;
 }
+
 .search-button:hover {
     background-color: #e04030;
+}
+
+
+.sugges{
+    padding-top: 20px;
+    padding-bottom: 0;
+    background-color: whitesmoke;
+}
+.suggest-things{
+    margin-left: 550px;
+    margin-bottom: 100px;
+    width: 35rem;
+    height: 20rem;
+    border-color: white;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.sugges-utility{
+    display: flex;
+    justify-content: center;
+
+}
+
+.item-utility{
+    margin-right: 30px;
+}
+.ima-suggest{
+    border-style: solid;
+    border-radius: 20px;
+    width: 70px;
+    height: 70px;
+}
+.word-suggest{
+    font-size:20px;
+    display: flex;
+    font-style:inherit;
 }
