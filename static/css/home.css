@@ -5,13 +5,8 @@
     margin-left: 10px;
     margin-right: 50px;
 }
-.shoppe-word{
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 10px;
-}
 .header{
-    background-color: orange;
+    background-color: orangered;
     position: relative;
     border-radius: 1rem;
     top:0;
@@ -29,6 +24,7 @@
 .header-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .header-right{
     display: flex;
@@ -42,35 +38,39 @@
     text-decoration: none;
     font-size: 20px;
 }
-
-
-
-.search-container {
+.search{
     display: flex;
-    margin-left: 30rem;
-    align-items: center;
+    align-items: centers;
+    width: max-content;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 750px;
+    border-radius: 2px;
+    background: white;
+    width: 800px;
 }
-
-.search-input {
-    width: 300px;
-    padding: 20px;
-    border: 2px solid #f24e35;
-    border-radius: 5px 0 0 5px;
+.search-input{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333333;
+    margin-right:10px;
     outline: none;
-}
-
-.search-button {
-    padding: 20px;
-    background-color: #f24e35;
     border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 0 5px 5px 0;
+    background-color: transparent;
+    flex:1;
+    width: 400px;
+}
+.search-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: orangered;
+    border-color: orangered;
+    border-radius: 4px;
 }
 
-.search-button:hover {
-    background-color: #e04030;
-}
+
 
 
 .sugges{
@@ -100,6 +100,9 @@
 
 .item-utility{
     margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .ima-suggest{
     border-style: solid;
