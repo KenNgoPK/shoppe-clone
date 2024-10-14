@@ -1,10 +1,4 @@
-.shoppe-icon{
-    width: 100px;
-    height: 100px;
-    border-radius: 20%;
-    margin-left: 10px;
-    margin-right: 50px;
-}
+
 .header{
     background-color: orangered;
     position: relative;
@@ -13,6 +7,7 @@
 }
 .icon-content{
     display: flex;
+    position: relative;
 }
 .header-left-item{
     color: white;
@@ -37,41 +32,59 @@
     padding: 5px;
     text-decoration: none;
     font-size: 20px;
+    color: white;
 }
-.search{
+.input-container{
     display: flex;
-    align-items: centers;
-    width: max-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: block;
+    margin-left: 300px;
+}
+
+.shoppe-icon{
+    width:8rem;
+    height:8rem;
+    margin:10px;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    bottom: 2px;
+    margin-right: 100px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 1000px; 
     padding: 15px;
     padding-left: 20px;
-    padding-right: 750px;
+    padding-right: 20px;
     border-radius: 2px;
     background: white;
-    width: 800px;
+    position: relative;
 }
-.search-input{
+
+.search-input {
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #333333;
-    margin-right:10px;
     outline: none;
     border: none;
     background-color: transparent;
-    flex:1;
-    width: 400px;
+    flex: 1;
+    width: 600px; /* Increased from 400px */
 }
-.search-button{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+.search-button {
+    padding: 10px 20px;
     background-color: orangered;
     border-color: orangered;
     border-radius: 4px;
+    position: absolute;
+    right: 7px;
 }
-
-
-
 
 .sugges{
     padding-top: 20px;
