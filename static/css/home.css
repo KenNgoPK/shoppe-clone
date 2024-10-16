@@ -39,7 +39,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: block;
+    position: relative;
     margin-left: 300px;
 }
 
@@ -84,7 +84,21 @@
     border-radius: 4px;
     position: absolute;
     right: 7px;
+    cursor: pointer;;
 }
+.search-button:hover{
+    background-color: rgb(219, 88, 28);
+}
+.bottom-input-item{
+    margin-left: 2px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    top: 100px;
+    position: block;
+}
+
 
 .sugges{
     padding-top: 20px;

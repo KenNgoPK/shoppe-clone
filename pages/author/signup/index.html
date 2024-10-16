@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../../static/css/signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Đăng ký</h1>
+        <form action="/signup" method="post">
+            <div class="input-group">
+                <i class="material-icons">person</i>
+                <input type="text" name="username" placeholder="Tên đăng nhập" required>
+            </div>
+            <div class="input-group">
+                <i class="material-icons">email</i>
+                <input type="email" name="email" placeholder="Địa chỉ email" required>
+            </div>
+            <div class="input-group">
+                <i class="material-icons">lock</i>
+                <input type="password" name="password" placeholder="Mật khẩu" required>
+            </div>
+            <div class="input-group">
+                <i class="material-icons">lock_outline</i>
+                <input type="password" name="confirm_password" placeholder="Xác nhận mật khẩu" required>
+            </div>
+            <button type="submit">Đăng ký</button>
+        </form>
+        <div class="login-link">
+            Đã có tài khoản? <a href="../login/index.html">Đăng nhập</a>
+        </div>
+    </div>
+</body>
+</html>
