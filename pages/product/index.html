@@ -9,7 +9,16 @@
 <body>
     <h1 id="product-name"></h1>
     <img id="product-img"  src="" alt="" width="100px">
-    <p id="product-price"></p>
+    <div class="product-price-container"> 
+        <span>Giá: </span>
+        <p id="product-price"></p>
+    </div>
+    <div class="product-stock-container">
+        <span>Số lượng còn lại: </span>
+        <p id="product-stock"></p>
+    </div>
+    
+    
     <button id="decrease-quantity-btn">-</button> 
     <input id="quantity-input" type="text">
     <button id="increase-quantity-btn">+</button>
