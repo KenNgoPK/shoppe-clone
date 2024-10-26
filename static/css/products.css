@@ -1,0 +1,9 @@
+.filterByRating{
+    width: 7rem;
+    margin-bottom: 5rem;
+}
+
+#star-4:hover{
+    cursor: pointer;
+    color:yellow
+}

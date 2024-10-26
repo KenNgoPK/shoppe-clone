@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="../../static/css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="filterByPrice">
+    <h2>Lọc theo giá</h2>
+    <input id="minPrice" type="text" placeholder="Giá thấp">
+    <input id="maxPrice" type="text" placeholder="Giá cao">
+    <button id="filterByPriceBtn">Lọc theo giá </button>
+    </div>
+
+    <div class="filterByCategory">
+        <h2>Lọc theo category</h2>
+        <input id="category" type="text" placeholder="Loại">
+        <button id="filterByCategoryBtn">Lọc theo Loại </button>
+        <ul id="categoryList">
+        </ul>
+    </div>
+
+    <div class="filterByRating">
+        <h2>Lọc theo rating</h2>
+        <input id="minRating" type="text" placeholder="Rating thấp">
+        <button id="filterByRatingBtn">Lọc theo Rating </button>
+
+        <div id="star-5">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+
+        <div id="star-4">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-of-david"></i>
+        </div>
+
+        <div id="star-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-of-david"></i>
+            <i class="fa-solid fa-star-of-david"></i>
+        </div>
+
+        <div id="star-2">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-of-david"></i>
+            <i class="fa-solid fa-star-of-david"></i>
+            <i class="fa-solid fa-star-of-david"></i>
+        </div>
+
+        <div id="star-1">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-of-david"></i>
+            <i class="fa-solid fa-star-of-david"></i>
+            <i class="fa-solid fa-star-of-david"></i>
+            <i class="fa-solid fa-star-of-david"></i>
+        </div>
+
+
+    </div>
+    
+    
+    
+
+
+    <ul id="product-list">
+
+    </ul>
+    
+    <script src="index.js"></script>
+</body>
+</html>
