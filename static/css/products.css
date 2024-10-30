@@ -3,7 +3,23 @@
     margin-bottom: 5rem;
 }
 
+#star-5:hover{
+    cursor: pointer;
+    color:yellow
+}
 #star-4:hover{
+    cursor: pointer;
+    color:yellow
+}
+#star-3:hover{
+    cursor: pointer;
+    color:yellow
+}
+#star-2:hover{
+    cursor: pointer;
+    color:yellow
+}
+#star-1:hover{
     cursor: pointer;
     color:yellow
 }

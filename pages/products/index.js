@@ -13,12 +13,35 @@ const categories =[
     {id:3, name:"Giày dép"},
 ]; 
 
+// async function fetchCategories() {
+//     const url = "https://form-test-api.vercel.app/api/categories"
+//     try{
+//         const response = await fetch(url)
+//         const data = response.json()
+//         const categories = data
+//         return categories
+//     }
+//     catch(error){
+//         console.log(error)
+//     }
+// }
+
+// async function  main() {
+//     const categories = await fetchCategories()
+//     renderCategories(categories)
+// }
+// main()
+
+
+
+
 function handleFilterByCategory(category){
     const filteredProducts = filterProductsByCategory(products,category)
     renderProducts(filteredProducts)
 }
 
 function renderCategories(categories){
+    document.getElementById("categoryList").textContent = ""
     for(let i = 0; i < categories.length; i++){
         const categoryElement = document.createElement("li")
         const categoryName = document.createElement('p')
@@ -35,8 +58,6 @@ function renderCategories(categories){
 }
 
 renderCategories(categories)
-
-
 
 function renderProducts(products){
     document.getElementById("product-list").textContent = ''
@@ -64,11 +85,7 @@ function renderProducts(products){
     }
 }
 
-
-
 renderProducts(products)
-
-
 
 function filterProductsByPrice(products,minPrice,maxPrice){
     const newProducts = []
@@ -137,12 +154,46 @@ function filterProductsByRating(products,minRating){
     return newProducts
 }
 
+function handleFilterByRating5Star(){
+    const filteredProducts = filterProductsByRating(products,5.0)
+    renderProducts(filteredProducts)
+}
+document.getElementById("star-5").onclick = handleFilterByRating5Star
+
 function handleFilterByRating4Star(){
     const filteredProducts = filterProductsByRating(products,4.0)
     renderProducts(filteredProducts)
 }
-
 document.getElementById("star-4").onclick = handleFilterByRating4Star
 
+function handleFilterByRating3Star(){
+    const filteredProducts = filterProductsByRating(products,3.0)
+    renderProducts(filteredProducts)
+}
+document.getElementById("star-3").onclick = handleFilterByRating3Star
+
+function handleFilterByRating2Star(){
+    const filteredProducts = filterProductsByRating(products,2.0)
+    renderProducts(filteredProducts)
+}
+document.getElementById("star-2").onclick = handleFilterByRating2Star
+
+function handleFilterByRating1Star(){
+    const filteredProducts = filterProductsByRating(products,1.0)
+    renderProducts(filteredProducts)
+}
+document.getElementById("star-1").onclick = handleFilterByRating1Star
 
 
+
+async function fetchProducts() {
+    try {
+        const response = await fetch("https://form-test-api.vercel.app/api/products?page=1");
+        const data = await response.json();  // await response.json() to get the actual JSON data
+        renderProducts(data);  // render the fetched products
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+fetchProducts()
