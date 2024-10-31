@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(248, 232, 13)
+}
+
+
+
+#products-list img{
+    width: 100px;
+    height: 100px;
+}
+
+#products-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#products-list li{
+    margin: 10px 50px ;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.button button{
+    margin: 10px 10px;
+    cursor: pointer;
+    padding: 10px 10px ;
+}
+
+
+#pageNumber{
+    display: flex;
+    justify-content: center;
+}
+
+.button :hover{
+    color: orangered;
+    border-color: orange;
+    background-color: orange;
+}
